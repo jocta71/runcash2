@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "cd api && npm install && npm start & cd scraper && pip install -r requirements.txt && python app.py"
+startCommand = "cd api && npm install && node index.js & cd ../scraper && pip install -r requirements.txt && python app.py"
 healthcheckPath = "/api/health"
 healthcheckTimeout = 100
 
